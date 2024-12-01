@@ -1,0 +1,30 @@
+/* Card container styling */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px; /* Sets a maximum width for the container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .cards-container {
+    gap: 1.2rem; /* Slightly reduce the gap between cards on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    gap: 1rem; /* Further reduce gap for mobile devices */
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-container {
+    gap: 0.8rem; /* Minimize gap on very small screens */
+  }
+}
